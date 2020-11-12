@@ -4,6 +4,7 @@ import UploadList from "./components/UploadList";
 function App() {
 	return (
 		<div className="App">
+			<h1>Quarterly Report Dropbox</h1>
 			<UploadList
 				uploads={[
 					{ name: "My Document", size: "32kb", type: "csv" },
