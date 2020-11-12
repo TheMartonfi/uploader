@@ -10,9 +10,10 @@ const UploadList = (props) => {
 
 	return (
 		<React.Fragment>
-			{/* Find a way to make this dynamic */}
 			<h4>Uploaded in the past 3 months</h4>
-			<div>{uploadList}</div>
+			<div>
+				{uploadList.length ? uploadList : "No documents for this period"}
+			</div>
 		</React.Fragment>
 	);
 };
