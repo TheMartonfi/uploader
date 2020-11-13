@@ -2,15 +2,16 @@ import React from "react";
 import { ReactComponent as UploadIcon } from "../../assets/UploadIcon.svg";
 import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
-import "./uploading.css";
 
 const Uploading = (props) => {
-	const { fileName } = props;
+	const { setMode, fileName } = props;
 	const [percentage, setPercentage] = React.useState(0);
 
 	React.useEffect(() => {
 		if (percentage === 100) {
-			return;
+			setTimeout(() => {
+				setMode({ type: "SHOW" });
+			}, 1050);
 		} else {
 			setPercentage(percentage + 50);
 		}
@@ -19,7 +20,7 @@ const Uploading = (props) => {
 	return (
 		<div>
 			<CircularProgressbar
-				className="upload-progress"
+				className="progress"
 				value={percentage}
 				strokeWidth={4}
 				styles={buildStyles({

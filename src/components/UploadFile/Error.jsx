@@ -5,11 +5,12 @@ import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
 
 const Error = (props) => {
-	const { fileName } = props;
+	const { handleFile, fileName } = props;
 
 	return (
 		<div>
 			<CircularProgressbar
+				className="progress"
 				value={100}
 				strokeWidth={4}
 				styles={buildStyles({ pathColor: "red" })}
@@ -20,7 +21,7 @@ const Error = (props) => {
 				This document could not be uploaded because the file type is incorrect.
 			</p>
 			<p>Only .CSV and .XLSX can be uploaded</p>
-			<InputFile label="Upload another document" />
+			<InputFile label="Upload another document" handleFile={handleFile} />
 		</div>
 	);
 };
