@@ -18,7 +18,6 @@ const UploadFile = (props) => {
 
 		if (file.type === csvFileType || file.type === xlsxFileType) {
 			setMode({ type: "UPLOADING", file });
-			// setUploads((prev) => [...prev, file]);
 		} else {
 			setMode({ type: "ERROR", file });
 		}

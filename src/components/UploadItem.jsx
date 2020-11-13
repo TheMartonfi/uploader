@@ -6,12 +6,12 @@ const UploadItem = (props) => {
 	const { name, size, type } = props;
 
 	return (
-		<div>
+		<li className="upload-item">
 			{type === "application/vnd.ms-excel" ? <CsvIcon /> : <XlsxIcon />}
 			<p>{name}</p>
 			{/* Convert bytes to kb with one decimal place */}
-			<p>{`${(size / 1000).toFixed(1)} kb`}</p>
-		</div>
+			<p className="file-size">{`${(size / 1000).toFixed(1)} kb`}</p>
+		</li>
 	);
 };
 

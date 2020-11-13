@@ -1,5 +1,6 @@
 import React from "react";
 import UploadItem from "./UploadItem";
+import "./upload-history.css";
 
 const UploadList = (props) => {
 	// Add key prop to UploadItem
@@ -10,12 +11,16 @@ const UploadList = (props) => {
 	});
 
 	return (
-		<React.Fragment>
+		<div className="upload-item-container">
 			<h4>Uploaded in the past 3 months</h4>
-			<div>
-				{uploadList.length ? uploadList : "No documents for this period"}
-			</div>
-		</React.Fragment>
+			{uploadList.length ? (
+				uploadList
+			) : (
+				<div>
+					<p>No documents for this period</p>
+				</div>
+			)}
+		</div>
 	);
 };
 

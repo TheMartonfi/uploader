@@ -16,6 +16,7 @@ const Uploading = (props) => {
 		} else {
 			setPercentage(percentage + 50);
 		}
+		//eslint-disable-next-line
 	}, [percentage]);
 
 	return (
