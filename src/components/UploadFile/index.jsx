@@ -7,14 +7,21 @@ const UploadFile = (props) => {
 	const { setUploads } = props;
 	const [mode, setMode] = React.useState({ type: "SHOW", fileName: "" });
 
-	const handleFile = (file) => {
-		const currentFile = file["0"];
+	const handleFile = (files) => {
+		const currentFile = files["0"];
 		const csvFileType = "application/vnd.ms-excel";
 		const xlsxFileType =
 			"application/vnd.openxmlformats-officedocument.spreadsheetml.sheet";
 
+		console.log(currentFile);
+
 		if (currentFile.type === csvFileType || currentFile.type === xlsxFileType) {
 			// Transition to upload
+			// Transition back to show once upload is done
+			// Not sure how to do that yet
+
+			// You can use the progress bar tag to keep track of progress
+			// You could make the progress bar yourself without relying on actual progress
 			setUploads((prev) => [...prev, currentFile]);
 		} else {
 			setMode({ type: "ERROR", fileName: currentFile.name });
