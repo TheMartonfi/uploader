@@ -5,7 +5,7 @@ import Error from "./Error";
 
 const UploadFile = (props) => {
 	const { setUploads } = props;
-	const [mode, setMode] = React.useState({ type: "SHOW", fileName: "" });
+	const [mode, setMode] = React.useState({ type: "UPLOADING", fileName: "" });
 
 	const handleFile = (files) => {
 		const currentFile = files["0"];
