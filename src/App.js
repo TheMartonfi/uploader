@@ -1,18 +1,15 @@
+import React from "react";
 import UploadFile from "./components/UploadFile";
 import UploadList from "./components/UploadList";
-// We will need a state to keep track of all the uploaded documents
 
 function App() {
+	const [uploads, setUploads] = React.useState([]);
+
 	return (
 		<div className="App">
 			<h1>Quarterly Report Dropbox</h1>
-			<UploadFile />
-			<UploadList
-				uploads={[
-					{ name: "My Document", size: "32kb", type: "csv" },
-					{ name: "My Document", size: "64kb", type: "xlsx" }
-				]}
-			/>
+			<UploadFile setUploads={setUploads} />
+			<UploadList uploads={uploads} />
 		</div>
 	);
 }

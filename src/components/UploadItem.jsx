@@ -5,9 +5,10 @@ import { ReactComponent as XlsxIcon } from "../assets/XLSXicon.svg";
 const UploadItem = (props) => {
 	return (
 		<div>
-			{props.type === "csv" ? <CsvIcon /> : <XlsxIcon />}
-			<p>{props.name || "Uploaded document name"}</p>
-			<p>{props.size || "weight"}</p>
+			{props.type === "application/vnd.ms-excel" ? <CsvIcon /> : <XlsxIcon />}
+			<p>{props.name}</p>
+			{/* Convert bytes to kb with one decimal place */}
+			<p>{`${(props.size / 1000).toFixed(1)} kb`}</p>
 		</div>
 	);
 };

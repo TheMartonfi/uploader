@@ -1,10 +1,10 @@
 import React from "react";
 import Show from "./Show";
 
-const UploadFile = () => {
+const UploadFile = (props) => {
 	return (
 		<div>
-			<Show />
+			<Show setUploads={props.setUploads} />
 		</div>
 	);
 };

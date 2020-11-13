@@ -1,6 +1,6 @@
 import React from "react";
 
-const Show = () => {
+const Show = (props) => {
 	return (
 		<div>
 			<h1>Drag and drop</h1>
@@ -9,7 +9,15 @@ const Show = () => {
 				click to upload
 			</button>
 			{/* Move style to css file later */}
-			<input type="file" id="get-file" style={{ display: "none" }}></input>
+			<input
+				id="get-file"
+				type="file"
+				accept=".csv, .xlsx"
+				style={{ display: "none" }}
+				onChange={(event) =>
+					props.setUploads((prev) => [...prev, event.target.files["0"]])
+				}
+			></input>
 		</div>
 	);
 };
