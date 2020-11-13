@@ -5,14 +5,22 @@ import "react-circular-progressbar/dist/styles.css";
 import "./uploading.css";
 
 const Uploading = (props) => {
-	// keep track of percentage with state
 	const { fileName } = props;
+	const [percentage, setPercentage] = React.useState(0);
+
+	React.useEffect(() => {
+		if (percentage === 100) {
+			return;
+		} else {
+			setPercentage(percentage + 50);
+		}
+	}, [percentage]);
 
 	return (
 		<div>
 			<CircularProgressbar
 				className="upload-progress"
-				value={50}
+				value={percentage}
 				strokeWidth={4}
 				styles={buildStyles({
 					strokeLinecap: "butt",

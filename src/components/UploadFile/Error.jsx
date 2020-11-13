@@ -11,7 +11,7 @@ const Error = (props) => {
 		<div>
 			<CircularProgressbar
 				value={100}
-				strokeWidth={2}
+				strokeWidth={4}
 				styles={buildStyles({ pathColor: "red" })}
 			/>
 			<ErrorIcon />
