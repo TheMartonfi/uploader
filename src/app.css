@@ -1,0 +1,10 @@
+body {
+	background-color: lightgray;
+	justify-content: center;
+}
+
+.app {
+	width: 30vw;
+	height: 30vh;
+	background-color: white;
+}

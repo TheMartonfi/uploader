@@ -10,9 +10,9 @@ const Show = (props) => {
 
 	return (
 		<FileDrop frame={document.getElementById("file-drop")} onDrop={handleFile}>
-			<DocumentLeft />
-			<SpreadsheetCenter />
-			<FolderRight />
+			<DocumentLeft className="left-document" />
+			<SpreadsheetCenter className="spreadsheet-center" />
+			<FolderRight className="folder-right" />
 			<h1>Drag and drop</h1>
 			<p>your document here or</p>
 			<InputFile label="click to upload" handleFile={handleFile} />
