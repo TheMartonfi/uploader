@@ -5,7 +5,7 @@ import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
 
 const Error = (props) => {
-	const { handleFile, fileName } = props;
+	const { handleFile, file } = props;
 
 	return (
 		<div>
@@ -16,7 +16,7 @@ const Error = (props) => {
 				styles={buildStyles({ pathColor: "red" })}
 			/>
 			<ErrorIcon />
-			<h1>{fileName}</h1>
+			<h1>{file.name}</h1>
 			<p>
 				This document could not be uploaded because the file type is incorrect.
 			</p>
