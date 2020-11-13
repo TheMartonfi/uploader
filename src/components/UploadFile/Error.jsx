@@ -2,6 +2,7 @@ import React from "react";
 import InputFile from "./InputFile";
 import { ReactComponent as ErrorIcon } from "../../assets/ErrorIcon.svg";
 import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
+import "react-circular-progressbar/dist/styles.css";
 
 const Error = (props) => {
 	const { fileName } = props;
