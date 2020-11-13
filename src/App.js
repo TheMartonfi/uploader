@@ -1,7 +1,7 @@
 import React from "react";
 import UploadFile from "./components/UploadFile";
 import UploadList from "./components/UploadList";
-// import "./app.css";
+import "./app.css";
 
 function App() {
 	const [uploads, setUploads] = React.useState([]);
