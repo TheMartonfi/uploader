@@ -1,5 +1,7 @@
 .upload-item-container {
-	margin: 25px;
+	width: 96%;
+	height: 35%;
+	margin: auto;
 }
 
 .upload-item-container > h4 {
@@ -7,8 +9,8 @@
 }
 
 .upload-item-container > div {
-	width: 96vw;
-	height: 35vh;
+	width: 100%;
+	height: 35%;
 	margin: auto;
 	background-color: rgb(233, 233, 233);
 }

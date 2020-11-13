@@ -9,7 +9,7 @@ const UploadFile = (props) => {
 	const [mode, setMode] = React.useState({ type: "SHOW", file: {} });
 
 	const handleFile = (files, event) => {
-		event && event.preventDefault();
+		event.preventDefault();
 
 		const file = files["0"];
 		const csvFileType = "application/vnd.ms-excel";

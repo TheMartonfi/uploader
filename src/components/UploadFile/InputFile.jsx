@@ -17,7 +17,7 @@ const InputFile = (props) => {
 				type="file"
 				accept=".csv, .xlsx"
 				style={{ display: "none" }}
-				onChange={(event) => handleFile(event.target.files)}
+				onChange={(event) => handleFile(event.target.files, event)}
 			></input>
 		</React.Fragment>
 	);
