@@ -1,13 +1,13 @@
 import React from "react";
+import UploadButton from "./UploadButton";
 
 const Show = (props) => {
 	return (
 		<div>
 			<h1>Drag and drop</h1>
 			<p>your document here or</p>
-			<button onClick={() => document.getElementById("get-file").click()}>
-				click to upload
-			</button>
+			{/* Hide input file and make this button click input file so I can customize text */}
+			<UploadButton label={"click to upload"} />
 			{/* Move style to css file later */}
 			<input
 				id="get-file"

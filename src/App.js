@@ -8,7 +8,7 @@ function App() {
 	return (
 		<div className="App">
 			<h1>Quarterly Report Dropbox</h1>
-			<UploadFile setUploads={setUploads} />
+			<UploadFile uploads={uploads} setUploads={setUploads} />
 			<UploadList uploads={uploads} />
 		</div>
 	);
