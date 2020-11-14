@@ -5,7 +5,6 @@ import "./app.css";
 
 function App() {
 	const [uploads, setUploads] = React.useState([]);
-	// Slightly rounded corners around every square and box shadow around app
 	return (
 		<React.Fragment>
 			<h1>Quarterly Report Dropbox</h1>
