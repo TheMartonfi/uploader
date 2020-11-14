@@ -9,9 +9,7 @@ const InputFile = (props) => {
 
 	return (
 		<React.Fragment>
-			{/* Hide input file and make this button click input file so I can customize text */}
 			<button onClick={handleClick}>{label}</button>
-			{/* Move style to css file later */}
 			<input
 				id="get-file"
 				type="file"

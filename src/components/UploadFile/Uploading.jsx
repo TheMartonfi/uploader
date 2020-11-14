@@ -2,6 +2,7 @@ import React from "react";
 import { ReactComponent as UploadIcon } from "../../assets/UploadIcon.svg";
 import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
+import "./uploading.css";
 
 const Uploading = (props) => {
 	const { setMode, setUploads, file } = props;
@@ -20,7 +21,7 @@ const Uploading = (props) => {
 	}, [percentage]);
 
 	return (
-		<div>
+		<div className="uploading-container">
 			<CircularProgressbar
 				className="progress"
 				value={percentage}
@@ -30,7 +31,7 @@ const Uploading = (props) => {
 					pathColor: "rgb(0, 184, 0)"
 				})}
 			/>
-			<UploadIcon />
+			<UploadIcon className="upload-icon" />
 			<h1>{file.name}</h1>
 			<p>uploading...</p>
 		</div>

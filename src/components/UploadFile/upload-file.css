@@ -51,11 +51,6 @@
 	outline: none;
 }
 
-.progress {
-	height: 10%;
-	width: 10%;
-}
-
 .file-drop:hover {
 	background-color: rgb(144, 238, 144, 0.25);
 	border-color: green;
