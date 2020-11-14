@@ -8,6 +8,7 @@ const Uploading = (props) => {
 	const { setMode, setUploads, file } = props;
 	const [percentage, setPercentage] = React.useState(0);
 
+	// Make anon function into validateUpload and export so I can make tests
 	React.useEffect(() => {
 		if (percentage === 100) {
 			setTimeout(() => {

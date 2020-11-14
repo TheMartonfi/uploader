@@ -9,7 +9,9 @@ const InputFile = (props) => {
 
 	return (
 		<React.Fragment>
-			<button onClick={handleClick}>{label}</button>
+			<button className="upload-button" onClick={handleClick}>
+				{label}
+			</button>
 			<input
 				id="get-file"
 				type="file"
