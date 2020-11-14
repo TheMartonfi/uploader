@@ -55,3 +55,37 @@
 	height: 10%;
 	width: 10%;
 }
+
+.file-drop:hover {
+	background-color: rgb(144, 238, 144, 0.25);
+	border-color: green;
+}
+
+/* The folders rotate out on hover */
+
+.file-drop:hover #Left-Document {
+	fill-opacity: 0;
+	stroke: green;
+	/* transform: rotate(-5deg); */
+	left: 150px;
+}
+
+.file-drop:hover #Rectangle-Copy-4 {
+	stroke: green;
+	fill: rgb(175, 255, 175);
+}
+
+.file-drop:hover #Group-30 > * {
+	fill: rgb(0, 170, 0);
+	stroke: green;
+}
+
+/* The middle part of the spreadsheet shows up as a different color than the others on hover */
+.file-drop:hover #Rectangle-Copy-10 {
+	fill: rgb(0, 196, 0);
+}
+
+.file-drop:hover #Right-Folder {
+	fill-opacity: 0;
+	stroke: green;
+}
