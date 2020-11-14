@@ -3,7 +3,9 @@
 	margin: auto;
 }
 
-.upload-item-container > h4 {
+.upload-item-container > p {
+	font-weight: 500;
+	font-size: 20px;
 	margin-bottom: 15px;
 }
 
@@ -18,6 +20,8 @@
 .upload-item-container > div > p {
 	padding: 100px 0;
 	text-align: center;
+	font-weight: 500;
+	font-size: 20px;
 }
 
 .upload-item {

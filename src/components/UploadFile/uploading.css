@@ -23,4 +23,6 @@
 .uploading-container > p {
 	margin: auto;
 	padding-bottom: 199px;
+	font-weight: 500;
+	font-size: 21px;
 }

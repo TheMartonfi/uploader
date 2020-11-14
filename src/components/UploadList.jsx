@@ -19,7 +19,7 @@ const UploadList = (props) => {
 
 	return (
 		<div className="upload-item-container">
-			<h4>Uploaded in the past 3 months</h4>
+			<p>Uploaded in the past 3 months</p>
 			{uploadList.length ? (
 				uploadList
 			) : (
