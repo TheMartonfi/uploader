@@ -1,7 +1,8 @@
 .upload-item-container {
-	width: 96%;
+	width: 90%;
 	height: 35%;
 	margin: auto;
+	padding-bottom: 20px;
 }
 
 .upload-item-container > h4 {

@@ -1,8 +1,6 @@
 .file-drop {
-	/* width: 85%; */
-	height: 100%;
 	border: 2px dashed lightgray;
-	margin: auto;
+	margin: 35px;
 	display: flex;
 	justify-content: center;
 	text-align: center;
