@@ -24,7 +24,7 @@ const Uploading = (props) => {
 				}
 			}, 1050);
 		} else {
-			setPercentage(percentage + 1);
+			setPercentage(percentage + 2);
 		}
 		//eslint-disable-next-line
 	}, [percentage]);
