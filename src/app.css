@@ -7,14 +7,15 @@ body {
 	position: fixed;
 	top: 0px;
 	bottom: 0px;
-	right: 330px;
+	right: 433px;
 	width: 55%;
 	background-color: white;
-	transform: scale(0.7);
+	transform: scale(0.8);
 	overflow-y: auto;
+	border-radius: 5px;
 }
 
 #root > h1 {
 	font-size: 1.5em;
-	margin: 80px 482px;
+	margin: 60px 530px;
 }

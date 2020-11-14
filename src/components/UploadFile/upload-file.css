@@ -1,5 +1,6 @@
 .file-drop {
 	border: 2px dashed lightgray;
+	border-radius: 5px;
 	margin: 35px;
 	display: flex;
 	justify-content: center;

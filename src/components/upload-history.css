@@ -12,6 +12,7 @@
 	height: 35%;
 	margin: auto;
 	background-color: rgb(233, 233, 233);
+	border-radius: 2px;
 }
 
 .upload-item-container > div > p {
@@ -24,6 +25,7 @@
 	justify-content: flex-start;
 	align-items: center;
 	border: 1px solid lightgrey;
+	border-radius: 2px;
 }
 
 .upload-item > * {

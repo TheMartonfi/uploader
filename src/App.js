@@ -5,7 +5,6 @@ import "./app.css";
 
 function App() {
 	const [uploads, setUploads] = React.useState([]);
-	// React Fragment should be a div and I should be positioning title based on that
 	// Slightly rounded corners around every square and box shadow around app
 	return (
 		<React.Fragment>
