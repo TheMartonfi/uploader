@@ -11,6 +11,7 @@ body {
 	width: 55%;
 	background-color: white;
 	transform: scale(0.7);
+	overflow-y: auto;
 }
 
 #root > h1 {
