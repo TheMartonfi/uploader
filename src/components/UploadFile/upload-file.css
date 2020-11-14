@@ -1,4 +1,5 @@
 .file-drop {
+	height: 390px;
 	border: 2px dashed lightgray;
 	border-radius: 5px;
 	margin: 35px;
@@ -6,6 +7,7 @@
 	justify-content: center;
 	text-align: center;
 	padding: 80px;
+	padding-top: 140px;
 }
 
 .left-document {

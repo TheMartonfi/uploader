@@ -5,14 +5,14 @@
 }
 
 .progress {
-	height: 20%;
-	width: 20%;
-	margin-top: 160px;
+	height: 16%;
+	width: 16%;
+	margin-top: 200px;
 }
 
 .upload-icon {
 	position: fixed;
-	top: 222px;
+	top: 262px;
 }
 
 .uploading-container > h1 {
@@ -22,5 +22,5 @@
 
 .uploading-container > p {
 	margin: auto;
-	padding-bottom: 78px;
+	padding-bottom: 199px;
 }

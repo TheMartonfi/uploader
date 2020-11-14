@@ -6,7 +6,7 @@
 
 .error-icon {
 	position: fixed;
-	top: 227px;
+	top: 267px;
 }
 
 .error-container > h1 {
@@ -21,5 +21,5 @@
 
 .error-container > button {
 	margin-top: 3px;
-	padding-bottom: 27px;
+	padding-bottom: 150px;
 }

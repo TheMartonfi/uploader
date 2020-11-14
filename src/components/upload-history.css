@@ -1,5 +1,5 @@
 .upload-item-container {
-	width: 90%;
+	width: 93%;
 	margin: auto;
 }
 
@@ -12,11 +12,11 @@
 	height: 35%;
 	margin: auto;
 	background-color: rgb(233, 233, 233);
-	border-radius: 2px;
+	border-radius: 3px;
 }
 
 .upload-item-container > div > p {
-	padding: 86px 0;
+	padding: 100px 0;
 	text-align: center;
 }
 
@@ -25,7 +25,7 @@
 	justify-content: flex-start;
 	align-items: center;
 	border: 1px solid lightgrey;
-	border-radius: 2px;
+	border-radius: 3px;
 }
 
 .upload-item > * {
