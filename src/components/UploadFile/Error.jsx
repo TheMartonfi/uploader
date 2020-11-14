@@ -3,6 +3,7 @@ import InputFile from "./InputFile";
 import { ReactComponent as ErrorIcon } from "../../assets/ErrorIcon.svg";
 import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
+import "./error.css";
 
 const Error = (props) => {
 	const { handleFile, file } = props;
@@ -19,8 +20,8 @@ const Error = (props) => {
 			<h1>{file.name}</h1>
 			<p>
 				This document could not be uploaded because the file type is incorrect.
-				<br></br>Only .CSV and .XLSX can be uploaded
 			</p>
+			<p>Only .CSV and .XLSX can be uploaded</p>
 			<InputFile label="Upload another document" handleFile={handleFile} />
 		</div>
 	);
