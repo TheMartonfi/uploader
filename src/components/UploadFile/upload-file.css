@@ -66,8 +66,13 @@
 .file-drop:hover #Left-Document {
 	fill-opacity: 0;
 	stroke: green;
-	/* transform: rotate(-5deg); */
 	left: 150px;
+}
+
+.file-drop:hover .left-document {
+	transform: rotate(-20deg);
+	left: 70px;
+	bottom: 8px;
 }
 
 .file-drop:hover #Rectangle-Copy-4 {
