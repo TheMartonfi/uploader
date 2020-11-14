@@ -15,7 +15,7 @@ const Uploading = (props) => {
 				setUploads((prev) => [...prev, file]);
 			}, 1050);
 		} else {
-			setPercentage(percentage + 50);
+			setPercentage(percentage + 1);
 		}
 		//eslint-disable-next-line
 	}, [percentage]);
