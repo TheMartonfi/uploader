@@ -1,6 +1,7 @@
 body {
 	background-color: lightgray;
 	font-family: "Montserrat", sans-serif;
+	font-weight: 500;
 }
 
 .app {
@@ -19,5 +20,5 @@ body {
 
 #root > h1 {
 	font-size: 1.5em;
-	margin: 30px 530px;
+	margin: 55px 530px;
 }

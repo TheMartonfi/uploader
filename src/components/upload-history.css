@@ -4,7 +4,6 @@
 }
 
 .upload-item-container > p {
-	font-weight: 500;
 	font-size: 20px;
 	margin-bottom: 15px;
 }
@@ -18,9 +17,8 @@
 }
 
 .upload-item-container > div > p {
-	padding: 99px 0;
+	padding: 101px 0;
 	text-align: center;
-	font-weight: 500;
 	font-size: 20px;
 	color: rgb(146, 146, 146);
 }
@@ -31,6 +29,7 @@
 	align-items: center;
 	border: 1px solid lightgrey;
 	border-radius: 3px;
+	font-size: 19px;
 }
 
 .upload-item > * {
