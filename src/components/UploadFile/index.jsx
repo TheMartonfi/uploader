@@ -10,17 +10,8 @@ const UploadFile = (props) => {
 
 	const handleFile = (files, event) => {
 		event.preventDefault();
-
 		const file = files["0"];
-		const csvFileType = "application/vnd.ms-excel";
-		const xlsxFileType =
-			"application/vnd.openxmlformats-officedocument.spreadsheetml.sheet";
-
-		if (file.type === csvFileType || file.type === xlsxFileType) {
-			setMode({ type: "UPLOADING", file });
-		} else {
-			setMode({ type: "ERROR", file });
-		}
+		setMode({ type: "UPLOADING", file });
 	};
 
 	return (

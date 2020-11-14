@@ -11,8 +11,16 @@ const Uploading = (props) => {
 	React.useEffect(() => {
 		if (percentage === 100) {
 			setTimeout(() => {
-				setMode({ type: "SHOW" });
-				setUploads((prev) => [...prev, file]);
+				const csvFileType = "application/vnd.ms-excel";
+				const xlsxFileType =
+					"application/vnd.openxmlformats-officedocument.spreadsheetml.sheet";
+
+				if (file.type === csvFileType || file.type === xlsxFileType) {
+					setMode({ type: "SHOW" });
+					setUploads((prev) => [...prev, file]);
+				} else {
+					setMode({ type: "ERROR", file });
+				}
 			}, 1050);
 		} else {
 			setPercentage(percentage + 1);
