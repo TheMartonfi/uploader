@@ -1,8 +1,7 @@
 .upload-item-container {
 	width: 90%;
-	height: 35%;
+	height: 69%;
 	margin: auto;
-	padding-bottom: 20px;
 }
 
 .upload-item-container > h4 {
@@ -17,7 +16,7 @@
 }
 
 .upload-item-container > div > p {
-	padding: 131px 0;
+	padding: 86px 0;
 	text-align: center;
 }
 
