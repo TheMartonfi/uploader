@@ -18,10 +18,11 @@
 }
 
 .upload-item-container > div > p {
-	padding: 100px 0;
+	padding: 93px 0;
 	text-align: center;
 	font-weight: 500;
 	font-size: 20px;
+	color: rgb(146, 146, 146);
 }
 
 .upload-item {
