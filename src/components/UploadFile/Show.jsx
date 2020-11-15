@@ -9,7 +9,7 @@ const Show = (props) => {
 	const { handleFile } = props;
 
 	return (
-		<FileDrop frame={document.getElementById("file-drop")} onDrop={handleFile}>
+		<FileDrop onDrop={handleFile}>
 			<DocumentLeft className="left-document" />
 			<SpreadsheetCenter className="spreadsheet-center" />
 			<FolderRight className="folder-right" />

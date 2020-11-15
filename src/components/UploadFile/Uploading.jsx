@@ -8,14 +8,13 @@ const Uploading = (props) => {
 	const { setMode, setUploads, file } = props;
 	const [percentage, setPercentage] = React.useState(0);
 
-	// Make anon function into validateUpload and export so I can make tests
 	React.useEffect(() => {
 		if (percentage === 100) {
 			setTimeout(() => {
 				const csvFileType = "application/vnd.ms-excel";
 				const xlsxFileType =
 					"application/vnd.openxmlformats-officedocument.spreadsheetml.sheet";
-
+				console.log(file.type);
 				if (file.type === csvFileType || file.type === xlsxFileType) {
 					setMode({ type: "SHOW" });
 					setUploads((prev) => [...prev, file]);
