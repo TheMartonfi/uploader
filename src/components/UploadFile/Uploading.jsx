@@ -21,7 +21,7 @@ const Uploading = (props) => {
 				} else {
 					setMode({ type: "ERROR", file });
 				}
-			}, 1050);
+			}, 1000);
 		} else {
 			setPercentage(percentage + 2);
 		}

@@ -14,6 +14,7 @@ const InputFile = (props) => {
 			</button>
 			<input
 				id="get-file"
+				data-testid="get-file"
 				type="file"
 				accept=".csv, .xlsx"
 				style={{ display: "none" }}
