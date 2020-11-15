@@ -17,12 +17,6 @@ describe("App", () => {
 		type: "application/vnd.ms-excel"
 	};
 
-	const xlsxFile = {
-		name: "file.xlsx",
-		size: 1543,
-		type: "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
-	};
-
 	const docxFile = {
 		name: "file.docx",
 		size: 1543,
@@ -48,5 +42,21 @@ describe("App", () => {
 		await waitForElementToBeRemoved(queryByText("uploading..."));
 
 		expect(queryByText("file.csv")).toBeInTheDocument();
+	});
+
+	it("renders app, uploads file and shows error message for incorrect file type", async () => {
+		const { getByText, getByTestId, queryByText } = render(<App />);
+
+		fireEvent.change(getByTestId("get-file"), {
+			target: { files: { 0: docxFile } }
+		});
+
+		expect(getByText("uploading...")).toBeInTheDocument();
+
+		await waitForElementToBeRemoved(queryByText("uploading..."));
+
+		expect(
+			getByText("Only .CSV and .XLSX can be uploaded")
+		).toBeInTheDocument();
 	});
 });
