@@ -11,8 +11,8 @@
 
 ## Screenshots
 
-!['Static'](https://github.com/TheMartonfi/scheduler/blob/master/docs/home.png?raw=true)
-!['Hover'](https://github.com/TheMartonfi/scheduler/blob/master/docs/book-interview.png?raw=true)
-!['Uploading'](https://github.com/TheMartonfi/scheduler/blob/master/docs/booked-interview.png?raw=true)
-!['Success'](https://github.com/TheMartonfi/scheduler/blob/master/docs/delete.png)
-!['Error'](https://github.com/TheMartonfi/scheduler/blob/master/docs/delete.png)
+!['Static'](https://github.com/TheMartonfi/uploader/blob/master/docs/static.png?raw=true)
+!['Hover'](https://github.com/TheMartonfi/uploader/blob/master/docs/hover.png?raw=true)
+!['Uploading'](https://github.com/TheMartonfi/uploader/blob/master/docs/uploading.png?raw=true)
+!['Success'](https://github.com/TheMartonfi/uploader/blob/master/docs/success.png?raw=true)
+!['Error'](https://github.com/TheMartonfi/uploader/blob/master/docs/error.png?raw=true)
